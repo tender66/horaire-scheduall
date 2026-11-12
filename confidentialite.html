@@ -11,7 +11,7 @@
 <main>
   <p><a href="./">← Horaire ScheduALL → Google Agenda</a></p>
   <h1>Politique de confidentialité</h1>
-  <p><em>Dernière mise à jour : 12 novembre 2026</em></p>
+  <p><em>Dernière mise à jour : 12 novembre 2026 (version 0.4.0)</em></p>
   <p>« Horaire ScheduALL → Google Agenda » (ci-après « l'extension ») est une extension Chrome <strong>non officielle</strong>. Elle n'est affiliée ni à Radio-Canada / CBC, ni à l'éditeur de ScheduALL, ni à Google.</p>
 
   <h2>Données traitées</h2>
@@ -19,8 +19,8 @@
     <thead><tr><th>Donnée</th><th>Usage</th><th>Où elle va</th></tr></thead>
     <tbody>
       <tr><td>Contenu du rapport ScheduALL « Horaire par employé », affiché sur <code>rapportsscheduall.cbcrc.ca</code></td><td>Repérer les quarts de l'employé choisi</td><td>Lu <strong>uniquement dans votre navigateur</strong>. Le rapport n'est ni copié ni transmis.</td></tr>
-      <tr><td>Nom de l'employé et ID de l'agenda Google que vous saisissez</td><td>Choisir les quarts à extraire et l'agenda à mettre à jour</td><td>Stockés dans votre profil Chrome (<code>chrome.storage</code>)</td></tr>
-      <tr><td>Vos quarts (date, heures, titre, lieu, code, repas, commentaires)</td><td>Créer ou mettre à jour les événements</td><td>Envoyés <strong>seulement à l'API Google Agenda</strong>, dans l'agenda que vous avez choisi</td></tr>
+      <tr><td>Nom de l'employé que vous saisissez, et identifiant de l'agenda créé par l'extension</td><td>Choisir les quarts à extraire et retrouver l'agenda à mettre à jour</td><td>Stockés dans votre profil Chrome (<code>chrome.storage</code>)</td></tr>
+      <tr><td>Vos quarts (date, heures, titre, lieu, code, repas, commentaires)</td><td>Créer ou mettre à jour les événements</td><td>Envoyés <strong>seulement à l'API Google Agenda</strong>, dans l'agenda « Horaire Radio-Canada » créé par l'extension dans votre compte</td></tr>
       <tr><td>Jeton d'accès Google</td><td>Autoriser l'écriture dans votre agenda</td><td>Géré par Chrome (<code>chrome.identity</code>) ; jamais transmis ailleurs qu'à Google</td></tr>
     </tbody>
   </table></div>
@@ -30,15 +30,15 @@
     <li>Elle ne transmet <strong>aucune donnée au développeur</strong> ni à un tiers autre que Google Agenda. Il n'y a ni serveur, ni statistiques, ni publicité, ni pisteur.</li>
     <li>Elle ne vend ni ne partage aucune donnée.</li>
     <li>Elle ne lit pas les autres sites. Son script ne s'exécute que sur <code>rapportsscheduall.cbcrc.ca</code>.</li>
-    <li>Dans votre agenda, elle ne modifie que les événements qu'elle a créés ou qui portent la mention <code>[source: scheduall]</code>.</li>
+    <li>Elle n'a accès à aucun de vos autres agendas : elle n'écrit que dans l'agenda « Horaire Radio-Canada » qu'elle a créé.</li>
   </ul>
 
   <h2>Autorisation Google</h2>
-  <p>L'extension demande seulement le droit <code>https://www.googleapis.com/auth/calendar.events</code>, qui permet de voir et modifier des événements. Vous pouvez le retirer à tout moment sur <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <p>L'extension demande seulement le droit <code>https://www.googleapis.com/auth/calendar.app.created</code>. Il lui permet de <strong>créer son propre agenda</strong> (« Horaire Radio-Canada ») et d'en gérer les événements. Elle <strong>n'a accès à aucun de vos autres agendas</strong>. Vous pouvez retirer ce droit à tout moment sur <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
   <p>L'usage des données reçues des API Google respecte la <a href="https://developers.google.com/terms/api-services-user-data-policy">Politique relative aux données utilisateur des services API Google</a>, y compris les exigences d'utilisation limitée (<em>Limited Use</em>).</p>
 
   <h2>Suppression</h2>
-  <p>Désinstaller l'extension supprime les réglages stockés dans Chrome. Les événements déjà créés restent dans votre agenda : vous pouvez les supprimer depuis Google Agenda.</p>
+  <p>Désinstaller l'extension supprime les réglages stockés dans Chrome. L'agenda « Horaire Radio-Canada » et ses événements restent dans votre compte Google : vous pouvez supprimer l'agenda depuis les paramètres de Google Agenda.</p>
 
   <h2>Contact</h2>
   <p>Questions : <a href="mailto:letendralex@gmail.com">letendralex@gmail.com</a></p>

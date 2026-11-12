@@ -11,22 +11,23 @@
 <body>
 <main>
   <header><img src="icon.png" alt=""><h1>Horaire ScheduALL → Google Agenda</h1></header>
-  <p class="lead">Une extension Chrome qui copie vos quarts du rapport ScheduALL « Horaire par employé » dans votre agenda Google, en un clic.</p>
+  <p class="lead">Une extension Chrome qui copie vos quarts du rapport ScheduALL « Horaire par employé » dans un agenda Google « Horaire Radio-Canada », en un clic.</p>
   <img class="shot" src="capture.png" alt="Menu de l'extension : aperçu des quarts, heures vérifiées et bouton Synchroniser">
 
   <h2>Fonctionnement</h2>
   <ul>
     <li>Ouvrez le rapport ScheduALL comme d'habitude, puis cliquez sur l'icône de l'extension.</li>
     <li>Vos quarts des deux semaines s'affichent. Les heures de chaque jour (repas déduits) sont comparées aux heures totales du rapport.</li>
-    <li><strong>Synchroniser</strong> ajoute, met à jour ou retire les événements dans l'agenda choisi, sans doublons. Vos autres rendez-vous ne sont jamais touchés.</li>
+    <li>À la première synchronisation, l'extension crée l'agenda « Horaire Radio-Canada » dans votre compte Google, puis le réutilise à chaque fois.</li>
+    <li><strong>Synchroniser</strong> ajoute, met à jour ou retire les événements de cet agenda, sans doublons. Vos autres agendas ne sont jamais touchés : l'extension n'y a pas accès.</li>
     <li>Un export <code>.ics</code> est aussi offert, sans compte Google.</li>
   </ul>
 
   <h2>Vos données</h2>
-  <p>Le rapport est lu dans votre navigateur. Vos quarts sont envoyés uniquement à l'API Google Agenda, dans l'agenda que vous choisissez. Aucun serveur, aucune statistique, aucun partage avec le développeur ni avec des tiers. Détails : <a href="confidentialite.html">politique de confidentialité</a>.</p>
+  <p>Le rapport est lu dans votre navigateur. Vos quarts sont envoyés uniquement à l'API Google Agenda, dans l'agenda « Horaire Radio-Canada » créé par l'extension. Aucun serveur, aucune statistique, aucun partage avec le développeur ni avec des tiers. Détails : <a href="confidentialite.html">politique de confidentialité</a>.</p>
 
   <h2>Accès Google demandé</h2>
-  <p>Le seul droit <code>calendar.events</code>, pour créer, modifier et retirer les événements de vos quarts. Révocable à tout moment sur <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <p>Le seul droit <code>calendar.app.created</code> : créer l'agenda « Horaire Radio-Canada » et en gérer les événements, sans accès à vos autres agendas. Révocable à tout moment sur <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
 
   <p class="note">Outil non officiel, non affilié à Radio-Canada / CBC, à l'éditeur de ScheduALL ni à Google. Il nécessite un accès au rapport ScheduALL de votre organisation.</p>
 
